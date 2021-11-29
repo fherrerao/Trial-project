@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="container">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      
+      <form id="survey-form">
+        <div class="input-container">
+          <div class="input-description">
+            <label id="name-label" for="name">Name</label>
+            <input required id="name" type="text" placeholder="Enter your name">
+          </div>
+          <div class="input-description">
+            <label id="email-label" for="email">Email</label>
+            <input required id="email" pattern=".+@globex\.com" type="email" placeholder="Enter your email">
+          </div>
+          <div class="input-description">
+            <label id="number-label" for="number">Age</label>
+            <input required id="number" type="number" placeholder="Enter a number" min="10" max="100">
+          </div>          
+        </div>        
+
+        <p class="center">Which option best describes your current role?</p>
+        <div class="selectContainer">
+          <select id="dropdown" name="" id="">
+            <option selected disabled value="">Select current role</option>
+            <option value="">Student</option>
+            <option value="">Full time job</option>
+            <option value="">Full time lerner</option>
+            <option value="">Preder not to say</option>
+          </select>
+        </div>
+        
+
+
+        <p class="center"> Would you recommend freeCodeCamp to a friend?</p>
+        <div class="radioButton">
+            <div>
+              <input id="definitely" type="radio" name="attribute" value="definitely">
+              <label for="definitely">Definitely</label>
+            </div>
+            <div>
+              <input id="maybe" type="radio" name="attribute" value="maybe">
+              <label for="maybe">Maybe</label>
+            </div>
+            <div>
+              <input id="notsure" type="radio" name="attribute" value="notsure"> 
+              <label for="notsure">Not sure</label>
+            </div>
+            
+        </div>
+            
+
+        <p class="center">What would you like to see improved? (Check all that apply)</p>
+        <div class="checkboxContainer">
+          <div>
+            <input id="front" type="checkbox" name="checkbox" value="frontend">
+            <label for="front">Front-end Projects</label>
+          </div>
+          
+          <div>
+            <input id="back" type="checkbox" name="checkbox" value="backend">
+            <label for="back">Back-end Projects</label>
+          </div>
+          
+          <div>
+            <input id="data" type="checkbox" name="checkbox" value="Data">
+            <label for="data">Data Visualization</label>
+          </div>
+          
+          <div>
+            <input id="Challenges" type="checkbox" name="checkbox" value="challenges">
+            <label for="Challenges">Challenges</label>
+          </div>
+          
+          <div>
+            <input id="open" type="checkbox" name="checkbox" value="opensource">
+            <label for="open">Open Source Community</label>
+          </div>
+          
+          <div>
+            <input id="gitter" type="checkbox" name="checkbox" value="gitter">
+            <label for="gitter">Gitter help rooms</label>
+          </div>
+          
+          <div>
+            <input id="videos" type="checkbox" name="checkbox" value="videos">
+            <label for="videos">Videos</label>
+          </div>
+          
+          <div>
+            <input id="city" type="checkbox" name="checkbox" value="city">
+            <label for="city">City Meetups</label>
+          </div>
+          
+          <div>
+            <input id="wiki" type="checkbox" name="checkbox" value="wiki">
+            <label for="wiki">Wiki</label>
+          </div>
+          
+          <div>
+            <input id="forum" type="checkbox" name="checkbox" value="forum">
+            <label for="forum">Forum</label>
+          </div>
+          
+          <div>
+            <input id="courses" type="checkbox" name="checkbox" value="additional">
+            <label for="courses">Additional Courses</label>
+          </div>
+
+        </div>
+        
+        
+        <p class="commentsP">
+          <label for="comments">Any comments or suggestions?</label> <br>
+          <textarea id="comments" placeholder="Enter your comment here ..."></textarea>
+        </p>
+        <div class="buttonContainer">
+          <button id="submit">submit</button>        
+        </div>
+        
+
+      </form>
+   
+      <script  src="js/index.js">
+      </script>
+  </body>
+</html>
